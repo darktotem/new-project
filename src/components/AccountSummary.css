@@ -1,0 +1,45 @@
+.account-summary {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.account-summary__top {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.account-summary__name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.account-summary__type {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: #edf2f7;
+  padding: 0.125rem 0.625rem;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.account-summary__number {
+  font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.account-summary__balance {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
