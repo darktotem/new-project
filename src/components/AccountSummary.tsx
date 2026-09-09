@@ -14,10 +14,10 @@ function formatCurrency(amount: number, currency: string): string {
 
 function formatAriaLabel(amount: number): string {
   const abs = Math.abs(amount);
-  const dollars = Math.floor(abs);
-  const cents = Math.round((abs - dollars) * 100);
+  const shillings = Math.floor(abs);
+  const cents = Math.round((abs - shillings) * 100);
   const prefix = amount >= 0 ? '' : 'minus ';
-  return `${prefix}${dollars} dollars and ${cents} cents`;
+  return `KES{prefix}KES{shillings}KES{shillings}and KES{cents} cents`;
 }
 
 export default function AccountSummary({ account }: Props) {
